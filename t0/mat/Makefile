@@ -1,7 +1,8 @@
 octave.log: rc.m
-	octave $< > $@
+	     octave $< > $@ 
 
 clean:
 	@rm -f octave.log octave-workspace *.eps *~
+
 
 .PHONY: clean

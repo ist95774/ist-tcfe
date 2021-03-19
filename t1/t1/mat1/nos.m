@@ -43,3 +43,16 @@ Vb = V2-V4
 
 Ib = Kb * Vb
 
+fp = fopen("tabela2.tex","w");
+fprintf(fp, 'V0 & %f\\\\ \\hline\n',V0);
+fprintf(fp, 'V1 & %f\\\\ \\hline\n',V1);
+fprintf(fp, "V2 & %f\\\\ \\hline\n ",V2);
+fprintf(fp, "V3 & %f\\\\ \\hline\n",V3);
+fprintf(fp, "V4 & %f\\\\ \\hline\n",V4);
+fprintf(fp, "V5 & %f\\\\ \\hline\n",V5);
+fprintf(fp, "V6 & %f\\\\ \\hline\n",V6);
+fprintf(fp, "V7 & %f\\\\ \\hline\n",V7);
+fprintf(fp, "Ic & %f\\\\ \\hline\n",Ic);
+fprintf(fp, "Ib & %f\\\\ \\hline\n",Ib); 
+fclose(fp);
+

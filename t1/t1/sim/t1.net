@@ -71,22 +71,21 @@ Gb 5 3 2 4 7.11172371179m  ; Kb
 .control
 
 
+*set hcopypscolor=0
 
-set hcopypscolor=0
+*set color0=white
 
-set color0=white
+*set color1=black
 
-set color1=black
+*set color2=red
 
-set color2=red
+*set color3=blue
 
-set color3=blue
+*set color4=violet
 
-set color4=violet
+*set color5=rgb:3/8/0
 
-set color5=rgb:3/8/0
-
-set color6=rgb:4/0/0
+*set color6=rgb:4/0/0
 
 
 
@@ -100,17 +99,21 @@ echo  "Estado inicial"
 
 echo "********************************************"
 
+echo "table_TAB"
+
 print all
 
-echo "********************************************"
+echo "table_END"
+
+*echo "********************************************"
 
 
 
-echo "********************************************"
+*echo "********************************************"
 
-echo  "Análise transitória"
+*echo  "Análise transitória"
 
-echo "********************************************"
+*echo "********************************************"
 
 *tran 1e-5 10e-3
 
@@ -122,10 +125,10 @@ echo "********************************************"
 
 
 
-echo "********************************************"
+*echo "********************************************"
 
 
-print v(2)-v(4)
+
 
 
 *plot i(Va)
@@ -139,9 +142,7 @@ print v(2)-v(4)
 *plot (v(6)/2.001k) 
 
 
-
-
-
+quit
 .endc
 
 .end
